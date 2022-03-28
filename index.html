@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="script/script.js"></script>
+    <title>TP4 Praktikum Web - Irfan Mochamad Esa</title>
+  </head>
+
+  <body>
+    <div class="bg-light px-5 py-5">
+      <div class="text-center mb-5">
+          <h1>Biodata</h1>
+      </div>
+
+        <div class="mb-3">
+          <label for="name" class="form-label"> Nama </label>
+          <input type="text" class="form-control" id="name" required/>
+        </div>
+
+        <div class="mb-3">
+          <label for="birthdate" class="form-label">Tanggal Lahir</label>
+          <input type="date" class="form-control" id="birthdate" required/>
+        </div>
+
+        <label for="gender" class="form-label"> Jenis Kelamin </label>
+        <div class="mb-3">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="Male"/>
+            <label class="form-check-label" for="male"> Laki-laki </label>
+            
+            <input class="form-check-input" type="radio" name="gender" id="female" value="Female"/>
+            <label class="form-check-label" for="female"> Perempuan </label>
+            
+            <input class="form-check-input" type="radio" name="gender" id="otherGender" value="OtherGender"/>
+            <label class="form-check-label" for="otherGender"> Other </label>
+        </div>
+
+        <label for="hobi" class="form-label"> Hobi </label>
+        <div class="mb-3">
+            <input class="form-check-input" type="checkbox" value="Ngoding" id="ngoding"/>
+            <label class="form-check-label" for="ngoding"> Ngoding </label>
+            
+            <input class="form-check-input" type="checkbox" value="Rebahan" id="rebahan"/>
+            <label class="form-check-label" for="rebahan"> Rebahan </label>
+
+            <input class="form-check-input" type="checkbox" value="Melamun" id="melamun"/>
+            <label class="form-check-label" for="melamun"> Melamun </label>
+
+            <input class="form-check-input" type="checkbox" value="Baca Buku" id="bacaBuku"/>
+            <label class="form-check-label" for="bacaBuku"> Baca Buku </label>
+
+            <input class="form-check-input" type="checkbox" value="Nonton Youtube" id="nontonYoutube"/>
+            <label class="form-check-label" for="nontonYoutube"> Nonton Youtube </label>
+
+            <input class="form-check-input" type="checkbox" value="Dengerin Lagu" id="dengerinLagu"/>
+            <label class="form-check-label" for="dengerinLagu"> Dengerin Lagu </label>
+
+            <input class="form-check-input" type="checkbox" value="Other Hobi" id="otherHobi"/>
+            <label class="form-check-label" for="otherHobi"> other </label>
+        </div>
+
+        <div class="mb-3">
+          <label for="agama" class="form-label"> Agama </label>
+          <select class="form-select" id="agama" required>
+            <option value = "Islam">Islam</option>
+            <option value = "Katolik">Katolik</option>
+            <option value = "Protestan">Protestan</option>
+            <option value = "Buddha">Buddha</option>
+            <option value = "Hindu">Hindu</option>
+            <option value = "Konghuchu">Konghucu</option>
+            <option value = "Other">Other</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="pesan" class="form-label">Pesan</label>
+          <textarea type="textarea" class="form-control" id="pesan"></textarea>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit" onclick="getData()">Submit</button>
+        </div>
+
+      <table class="table mt-5">
+        <thead>
+          <tr>
+            <th scope="col-4">Label</th>
+            <th scope="col-4">Value</th>
+          </tr>
+        </thead>
+      </table>
+
+    </div>
+  </body>
+</html>
